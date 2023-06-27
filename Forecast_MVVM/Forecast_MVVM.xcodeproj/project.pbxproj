@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A589F342A4B829C0041FB18 /* DayDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A589F332A4B829C0041FB18 /* DayDetailViewModel.swift */; };
 		41978F4327B9C26C001CB2C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41978F4227B9C26C001CB2C0 /* AppDelegate.swift */; };
 		41978F4527B9C26C001CB2C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41978F4427B9C26C001CB2C0 /* SceneDelegate.swift */; };
 		41978F4A27B9C26C001CB2C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41978F4827B9C26C001CB2C0 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A589F332A4B829C0041FB18 /* DayDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailViewModel.swift; sourceTree = "<group>"; };
 		41978F3F27B9C26C001CB2C0 /* Forecast_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forecast_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41978F4227B9C26C001CB2C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41978F4427B9C26C001CB2C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			children = (
 				41978F6A27B9CDF2001CB2C0 /* NetworkingController.swift */,
 				41978F6C27B9CE70001CB2C0 /* ResultError.swift */,
+				3A589F332A4B829C0041FB18 /* DayDetailViewModel.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A589F342A4B829C0041FB18 /* DayDetailViewModel.swift in Sources */,
 				41978F6F27B9CF0A001CB2C0 /* DayForecastTableViewCell.swift in Sources */,
 				41978F6D27B9CE70001CB2C0 /* ResultError.swift in Sources */,
 				41978F4327B9C26C001CB2C0 /* AppDelegate.swift in Sources */,
