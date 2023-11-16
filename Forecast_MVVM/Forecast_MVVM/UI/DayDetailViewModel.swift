@@ -13,22 +13,24 @@ protocol DayDetailViewDelegate: DayDetailsViewController {
 }
 
 class DayDetailViewModel {
-    
-    var forcastData: TopLevelDictionary?
 
-    // step 3
-    var days: [Day]  { //SOT
-        self.forcastData?.days ?? [] // nil
+    // MARK: - Properties
+    var forcastData: TopLevelDictionary?
+    var days: [Day]  { 
+        self.forcastData?.days ?? []
     }
+    
     weak var delegate: DayDetailViewDelegate?
     private let networkingController: NetworkingController
     
+    // MARK: - Dependency Injection
     init(delegate: DayDetailViewDelegate?, networkingController: NetworkingController = NetworkingController()) {
         self.delegate = delegate
         self.networkingController = networkingController
         fetchForcastData()
     }
-        
+    
+    // MARK: - Functions
     private func fetchForcastData()  {
         NetworkingController.fetchDays { [weak self] result  in
             switch result {
@@ -39,6 +41,5 @@ class DayDetailViewModel {
                 print(failure)
             }
         }
-    }// end of class for fetchForcastData
-} // ending class
-
+    }
+}

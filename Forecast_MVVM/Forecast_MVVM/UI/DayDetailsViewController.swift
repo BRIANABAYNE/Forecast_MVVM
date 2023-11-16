@@ -8,7 +8,7 @@
 import UIKit
 
 class DayDetailsViewController: UIViewController {
-  
+    
     //MARK: - Outlets
     @IBOutlet weak var dayForcastTableView: UITableView!
     @IBOutlet weak var cityNameLabel: UILabel!
@@ -18,21 +18,19 @@ class DayDetailsViewController: UIViewController {
     @IBOutlet weak var currentDescriptionLabel: UILabel!
     
     //MARK: - Properties
-   // create a viewModel
     var viewModel: DayDetailViewModel!
-
-    //MARK: - View Lifecyle
+    
+    //MARK: - Lifecyles
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel = DayDetailViewModel(delegate: self)
-        // Conform to the TBVS Protocols
+        
         dayForcastTableView.delegate = self
         dayForcastTableView.dataSource = self
     }
-           
     
+    // MARK: - Methods
     func updateViews() {
-        
         let currentDay = viewModel.days[0]
         cityNameLabel.text = viewModel.forcastData?.cityName ?? "No City Found"
         currentDescriptionLabel.text = currentDay.weather.description
@@ -43,7 +41,7 @@ class DayDetailsViewController: UIViewController {
 }
 
 
-//MARK: - Extenstions
+//MARK: - Extenstion
 extension DayDetailsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.forcastData?.days.count ?? 0
@@ -56,7 +54,6 @@ extension DayDetailsViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
 }
-
 
 extension DayDetailsViewController: DayDetailViewDelegate {
     func updateView() {

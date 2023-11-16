@@ -47,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A5BCC9D2B05C98E0093AF12 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				41978F4827B9C26C001CB2C0 /* Main.storyboard */,
+				41978F4D27B9C26E001CB2C0 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
 		41978F3627B9C26C001CB2C0 = {
 			isa = PBXGroup;
 			children = (
@@ -66,12 +75,11 @@
 		41978F4127B9C26C001CB2C0 /* Forecast_MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				41978F6527B9CDA8001CB2C0 /* Controller */,
 				41978F6427B9CDA1001CB2C0 /* Model */,
-				41978F6727B9CDB5001CB2C0 /* View */,
+				41978F6527B9CDA8001CB2C0 /* Services */,
+				41978F6727B9CDB5001CB2C0 /* UI */,
+				3A5BCC9D2B05C98E0093AF12 /* StoryBoard */,
 				41978F5627B9C2B5001CB2C0 /* Supporting Files */,
-				41978F4827B9C26C001CB2C0 /* Main.storyboard */,
-				41978F4D27B9C26E001CB2C0 /* LaunchScreen.storyboard */,
 			);
 			path = Forecast_MVVM;
 			sourceTree = "<group>";
@@ -95,23 +103,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		41978F6527B9CDA8001CB2C0 /* Controller */ = {
+		41978F6527B9CDA8001CB2C0 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				41978F6A27B9CDF2001CB2C0 /* NetworkingController.swift */,
 				41978F6C27B9CE70001CB2C0 /* ResultError.swift */,
-				3A589F332A4B829C0041FB18 /* DayDetailViewModel.swift */,
 			);
-			path = Controller;
+			path = Services;
 			sourceTree = "<group>";
 		};
-		41978F6727B9CDB5001CB2C0 /* View */ = {
+		41978F6727B9CDB5001CB2C0 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				3A589F332A4B829C0041FB18 /* DayDetailViewModel.swift */,
 				41978F6E27B9CF0A001CB2C0 /* DayForecastTableViewCell.swift */,
 				41978F7027B9CF46001CB2C0 /* DayDetailsViewController.swift */,
 			);
-			path = View;
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
